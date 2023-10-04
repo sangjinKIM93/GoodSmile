@@ -11,6 +11,7 @@ import ARKit
 
 class ARViewModel: UIViewController, ObservableObject, ARSessionDelegate {
     @Published private var model : ARModel = ARModel()
+    var faceRing: FaceRing.Scene? // RCProject AR Ring On Success
     
     var arView : ARView {
         model.arView
@@ -20,13 +21,29 @@ class ARViewModel: UIViewController, ObservableObject, ARSessionDelegate {
         var temp = false
         if model.isGoodSmile() {
             temp = true
+            faceRing?.notifications.ringAnimation.post()
         }
         return temp
+    }
+    
+    func isSymmetryMouth() -> Bool {
+        return model.isSymmetryMouth()
+    }
+    
+    func isSymmetryEyeWidth() -> Bool {
+        return model.isSymmetryEyeWidth()
     }
     
     func startSessionDelegate() {
         model.arView.session.delegate = self
         requestPermission()
+        setFaceRingAnchor()
+    }
+    
+    func setFaceRingAnchor() {
+        let faceRingAnchor = try! FaceRing.loadScene()
+        faceRing = faceRingAnchor
+        arView.scene.anchors.append(faceRingAnchor)
     }
     
     func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {

@@ -14,9 +14,13 @@ struct ContentView : View {
         ZStack {
             ARViewContainer(arViewModel: arViewModel).edgesIgnoringSafeArea(.all)
             VStack {
-                Text(arViewModel.isSmiling ? "Smiling 😄" : "Not Smiling 😐")
+                Text(arViewModel.isSymmetryEyeWidth() ? "Eyes Good 😄" : "Eyes Bad 😐")
                     .padding()
-                    .foregroundColor(arViewModel.isSmiling ? .green : .red)
+                    .foregroundColor(arViewModel.isSymmetryEyeWidth() ? .green : .red)
+                    .background(RoundedRectangle(cornerRadius: 25).fill(.regularMaterial))
+                Text(arViewModel.isSymmetryMouth() ? "Mouth Good 😄" : "Mouth Bad 😐")
+                    .padding()
+                    .foregroundColor(arViewModel.isSymmetryMouth() ? .green : .red)
                     .background(RoundedRectangle(cornerRadius: 25).fill(.regularMaterial))
                 Spacer()
             }
