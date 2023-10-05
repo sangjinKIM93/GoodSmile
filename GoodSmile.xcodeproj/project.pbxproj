@@ -15,6 +15,7 @@
 		48F191EC2ACBF3DC009DF668 /* ARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F191EB2ACBF3DC009DF668 /* ARViewModel.swift */; };
 		48F191EE2ACBF423009DF668 /* ARModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F191ED2ACBF423009DF668 /* ARModel.swift */; };
 		48F191F02ACDAAC5009DF668 /* FaceRing.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 48F191EF2ACDAAC5009DF668 /* FaceRing.rcproject */; };
+		48F191F22ACEEBF7009DF668 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F191F12ACEEBF7009DF668 /* StopWatch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		48F191EB2ACBF3DC009DF668 /* ARViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewModel.swift; sourceTree = "<group>"; };
 		48F191ED2ACBF423009DF668 /* ARModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModel.swift; sourceTree = "<group>"; };
 		48F191EF2ACDAAC5009DF668 /* FaceRing.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = FaceRing.rcproject; sourceTree = "<group>"; };
+		48F191F12ACEEBF7009DF668 /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				48F191EB2ACBF3DC009DF668 /* ARViewModel.swift */,
 				48F191ED2ACBF423009DF668 /* ARModel.swift */,
+				48F191F12ACEEBF7009DF668 /* StopWatch.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				48F191DD2ACBEBB4009DF668 /* ContentView.swift in Sources */,
 				48F191DB2ACBEBB4009DF668 /* AppDelegate.swift in Sources */,
 				48F191DF2ACBEBB4009DF668 /* Experience.rcproject in Sources */,
+				48F191F22ACEEBF7009DF668 /* StopWatch.swift in Sources */,
 				48F191F02ACDAAC5009DF668 /* FaceRing.rcproject in Sources */,
 				48F191EC2ACBF3DC009DF668 /* ARViewModel.swift in Sources */,
 				48F191EE2ACBF423009DF668 /* ARModel.swift in Sources */,
