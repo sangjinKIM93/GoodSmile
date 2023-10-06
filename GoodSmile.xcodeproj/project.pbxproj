@@ -16,6 +16,7 @@
 		48F191EE2ACBF423009DF668 /* ARModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F191ED2ACBF423009DF668 /* ARModel.swift */; };
 		48F191F02ACDAAC5009DF668 /* FaceRing.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 48F191EF2ACDAAC5009DF668 /* FaceRing.rcproject */; };
 		48F191F22ACEEBF7009DF668 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F191F12ACEEBF7009DF668 /* StopWatch.swift */; };
+		48F191F52AD03C6F009DF668 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F191F42AD03C6F009DF668 /* UIApplication+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		48F191ED2ACBF423009DF668 /* ARModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModel.swift; sourceTree = "<group>"; };
 		48F191EF2ACDAAC5009DF668 /* FaceRing.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = FaceRing.rcproject; sourceTree = "<group>"; };
 		48F191F12ACEEBF7009DF668 /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
+		48F191F42AD03C6F009DF668 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		48F191D92ACBEBB4009DF668 /* GoodSmile */ = {
 			isa = PBXGroup;
 			children = (
+				48F191F32AD03C5D009DF668 /* Extension */,
 				48F191EA2ACBF3D2009DF668 /* ViewModel */,
 				48F191DA2ACBEBB4009DF668 /* AppDelegate.swift */,
 				48F191DC2ACBEBB4009DF668 /* ContentView.swift */,
@@ -88,6 +91,14 @@
 				48F191F12ACEEBF7009DF668 /* StopWatch.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		48F191F32AD03C5D009DF668 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				48F191F42AD03C6F009DF668 /* UIApplication+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +173,7 @@
 			files = (
 				48F191DD2ACBEBB4009DF668 /* ContentView.swift in Sources */,
 				48F191DB2ACBEBB4009DF668 /* AppDelegate.swift in Sources */,
+				48F191F52AD03C6F009DF668 /* UIApplication+Extension.swift in Sources */,
 				48F191DF2ACBEBB4009DF668 /* Experience.rcproject in Sources */,
 				48F191F22ACEEBF7009DF668 /* StopWatch.swift in Sources */,
 				48F191F02ACDAAC5009DF668 /* FaceRing.rcproject in Sources */,
