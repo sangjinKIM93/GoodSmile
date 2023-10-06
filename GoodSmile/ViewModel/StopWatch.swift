@@ -24,6 +24,7 @@ class StopWatch: ObservableObject {
                                                    repeats: true) { _ in
             if self.counter == 0 {
                 self.timer.invalidate()
+                return
             }
             self.counter -= 1
         }
