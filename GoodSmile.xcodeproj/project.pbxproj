@@ -20,6 +20,8 @@
 		48F191F82AD0F631009DF668 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F191F72AD0F631009DF668 /* ImageManager.swift */; };
 		48F191FB2AD10FEF009DF668 /* SmileMemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F191FA2AD10FEF009DF668 /* SmileMemoView.swift */; };
 		48F191FE2AD267E1009DF668 /* SmileMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F191FD2AD267E1009DF668 /* SmileMemo.swift */; };
+		48F192012AD26C1B009DF668 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 48F192002AD26C1B009DF668 /* RealmSwift */; };
+		48F192052AD26CEF009DF668 /* RealmRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F192042AD26CEF009DF668 /* RealmRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,7 @@
 		48F191F72AD0F631009DF668 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		48F191FA2AD10FEF009DF668 /* SmileMemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileMemoView.swift; sourceTree = "<group>"; };
 		48F191FD2AD267E1009DF668 /* SmileMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileMemo.swift; sourceTree = "<group>"; };
+		48F192042AD26CEF009DF668 /* RealmRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48F192012AD26C1B009DF668 /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +73,7 @@
 		48F191D92ACBEBB4009DF668 /* GoodSmile */ = {
 			isa = PBXGroup;
 			children = (
+				48F192022AD26CD5009DF668 /* Repository */,
 				48F191FC2AD267D7009DF668 /* Model */,
 				48F191F92AD10FE4009DF668 /* View */,
 				48F191F62AD0F628009DF668 /* Manager */,
@@ -134,6 +139,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		48F192022AD26CD5009DF668 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				48F192042AD26CEF009DF668 /* RealmRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,6 +163,9 @@
 			dependencies = (
 			);
 			name = GoodSmile;
+			packageProductDependencies = (
+				48F192002AD26C1B009DF668 /* RealmSwift */,
+			);
 			productName = GoodSmile;
 			productReference = 48F191D72ACBEBB4009DF668 /* GoodSmile.app */;
 			productType = "com.apple.product-type.application";
@@ -178,6 +194,9 @@
 				Base,
 			);
 			mainGroup = 48F191CE2ACBEBB4009DF668;
+			packageReferences = (
+				48F191FF2AD26C1B009DF668 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 48F191D82ACBEBB4009DF668 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -209,6 +228,7 @@
 				48F191F52AD03C6F009DF668 /* UIApplication+Extension.swift in Sources */,
 				48F191F82AD0F631009DF668 /* ImageManager.swift in Sources */,
 				48F191FB2AD10FEF009DF668 /* SmileMemoView.swift in Sources */,
+				48F192052AD26CEF009DF668 /* RealmRepository.swift in Sources */,
 				48F191FE2AD267E1009DF668 /* SmileMemo.swift in Sources */,
 				48F191DF2ACBEBB4009DF668 /* Experience.rcproject in Sources */,
 				48F191F22ACEEBF7009DF668 /* StopWatch.swift in Sources */,
@@ -421,6 +441,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		48F191FF2AD26C1B009DF668 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.43.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		48F192002AD26C1B009DF668 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48F191FF2AD26C1B009DF668 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 48F191CF2ACBEBB4009DF668 /* Project object */;
 }
