@@ -18,6 +18,8 @@
 		48F191F22ACEEBF7009DF668 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F191F12ACEEBF7009DF668 /* StopWatch.swift */; };
 		48F191F52AD03C6F009DF668 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F191F42AD03C6F009DF668 /* UIApplication+Extension.swift */; };
 		48F191F82AD0F631009DF668 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F191F72AD0F631009DF668 /* ImageManager.swift */; };
+		48F191FB2AD10FEF009DF668 /* SmileMemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F191FA2AD10FEF009DF668 /* SmileMemoView.swift */; };
+		48F191FE2AD267E1009DF668 /* SmileMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F191FD2AD267E1009DF668 /* SmileMemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		48F191F12ACEEBF7009DF668 /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
 		48F191F42AD03C6F009DF668 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		48F191F72AD0F631009DF668 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		48F191FA2AD10FEF009DF668 /* SmileMemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileMemoView.swift; sourceTree = "<group>"; };
+		48F191FD2AD267E1009DF668 /* SmileMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileMemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 		48F191D92ACBEBB4009DF668 /* GoodSmile */ = {
 			isa = PBXGroup;
 			children = (
+				48F191FC2AD267D7009DF668 /* Model */,
+				48F191F92AD10FE4009DF668 /* View */,
 				48F191F62AD0F628009DF668 /* Manager */,
 				48F191F32AD03C5D009DF668 /* Extension */,
 				48F191EA2ACBF3D2009DF668 /* ViewModel */,
@@ -110,6 +116,22 @@
 				48F191F72AD0F631009DF668 /* ImageManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		48F191F92AD10FE4009DF668 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48F191FA2AD10FEF009DF668 /* SmileMemoView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48F191FC2AD267D7009DF668 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48F191FD2AD267E1009DF668 /* SmileMemo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +208,8 @@
 				48F191DB2ACBEBB4009DF668 /* AppDelegate.swift in Sources */,
 				48F191F52AD03C6F009DF668 /* UIApplication+Extension.swift in Sources */,
 				48F191F82AD0F631009DF668 /* ImageManager.swift in Sources */,
+				48F191FB2AD10FEF009DF668 /* SmileMemoView.swift in Sources */,
+				48F191FE2AD267E1009DF668 /* SmileMemo.swift in Sources */,
 				48F191DF2ACBEBB4009DF668 /* Experience.rcproject in Sources */,
 				48F191F22ACEEBF7009DF668 /* StopWatch.swift in Sources */,
 				48F191F02ACDAAC5009DF668 /* FaceRing.rcproject in Sources */,
