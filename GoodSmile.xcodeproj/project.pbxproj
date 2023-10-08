@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		482B050E2AD2AB7D00B7C77F /* Float+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482B050D2AD2AB7D00B7C77F /* Float+Extension.swift */; };
+		482B05122AD2B26900B7C77F /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482B05112AD2B26900B7C77F /* Color+Extension.swift */; };
 		48F191DB2ACBEBB4009DF668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F191DA2ACBEBB4009DF668 /* AppDelegate.swift */; };
 		48F191DD2ACBEBB4009DF668 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F191DC2ACBEBB4009DF668 /* ContentView.swift */; };
 		48F191DF2ACBEBB4009DF668 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 48F191DE2ACBEBB4009DF668 /* Experience.rcproject */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		482B050D2AD2AB7D00B7C77F /* Float+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Extension.swift"; sourceTree = "<group>"; };
+		482B05112AD2B26900B7C77F /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		48F191D72ACBEBB4009DF668 /* GoodSmile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodSmile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F191DA2ACBEBB4009DF668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48F191DC2ACBEBB4009DF668 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				48F191F42AD03C6F009DF668 /* UIApplication+Extension.swift */,
 				48F192082AD29BAD009DF668 /* Date+Extension.swift */,
 				482B050D2AD2AB7D00B7C77F /* Float+Extension.swift */,
+				482B05112AD2B26900B7C77F /* Color+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				48F191F02ACDAAC5009DF668 /* FaceRing.rcproject in Sources */,
 				48F192092AD29BAD009DF668 /* Date+Extension.swift in Sources */,
 				48F191EC2ACBF3DC009DF668 /* ARViewModel.swift in Sources */,
+				482B05122AD2B26900B7C77F /* Color+Extension.swift in Sources */,
 				48F191EE2ACBF423009DF668 /* ARModel.swift in Sources */,
 				48F1920B2AD2A32B009DF668 /* SmileMemoCardView.swift in Sources */,
 			);
