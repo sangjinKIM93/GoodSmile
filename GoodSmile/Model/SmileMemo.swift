@@ -6,18 +6,40 @@
 //
 
 import Foundation
+import RealmSwift
 
-struct SmileMemo {
-    let imagePath: String
-    let date: String
-    let smileInfo: SmileInfo
+class SmileMemo: Object {
+    @Persisted(primaryKey: true) var id: UUID
+    @Persisted var date: String
+    @Persisted var smileInfo: SmileInfo?
+    
+    convenience init(date: String, smileInfo: SmileInfo?) {
+        self.init()
+        self.date = date
+        self.smileInfo = smileInfo
+    }
 }
 
-struct SmileInfo {
-    let eyeWideLeft: Float = 0
-    let eyeWideRight: Float = 0
-    let eyeBlinkLeft: Float = 0
-    let eyeBlinkRight: Float = 0
-    let smileRight: Float = 0
-    let smileLeft: Float = 0
+class SmileInfo: Object {
+    @Persisted var eyeWideLeft: Float
+    @Persisted var eyeWideRight: Float
+    @Persisted var eyeBlinkLeft: Float
+    @Persisted var eyeBlinkRight: Float
+    @Persisted var smileRight: Float
+    @Persisted var smileLeft: Float
+    
+    convenience init(eyeWideLeft: Float = 0,
+         eyeWideRight: Float = 0,
+         eyeBlinkLeft: Float = 0,
+         eyeBlinkRight: Float = 0,
+         smileRight: Float = 0,
+         smileLeft: Float = 0) {
+        self.init()
+        self.eyeWideLeft = eyeWideLeft
+        self.eyeWideRight = eyeWideRight
+        self.eyeBlinkLeft = eyeBlinkLeft
+        self.eyeBlinkRight = eyeBlinkRight
+        self.smileRight = smileRight
+        self.smileLeft = smileLeft
+    }
 }

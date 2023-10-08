@@ -63,4 +63,13 @@ class ARViewModel: UIViewController, ObservableObject, ARSessionDelegate {
             }
         })
     }
+    
+    func getSmileInfo() -> SmileInfo {
+        return SmileInfo(eyeWideLeft: model.eyeWideLeft,
+                         eyeWideRight: model.eyeWideRight,
+                         eyeBlinkLeft: model.eyeBlinkLeft,
+                         eyeBlinkRight: model.eyeBlinkRight,
+                         smileRight: model.smileRight,
+                         smileLeft: model.smileLeft)
+    }
 }
