@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		482B050E2AD2AB7D00B7C77F /* Float+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482B050D2AD2AB7D00B7C77F /* Float+Extension.swift */; };
 		48F191DB2ACBEBB4009DF668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F191DA2ACBEBB4009DF668 /* AppDelegate.swift */; };
 		48F191DD2ACBEBB4009DF668 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F191DC2ACBEBB4009DF668 /* ContentView.swift */; };
 		48F191DF2ACBEBB4009DF668 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 48F191DE2ACBEBB4009DF668 /* Experience.rcproject */; };
@@ -24,9 +25,11 @@
 		48F192052AD26CEF009DF668 /* RealmRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F192042AD26CEF009DF668 /* RealmRepository.swift */; };
 		48F192072AD29B02009DF668 /* SmileMemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F192062AD29B02009DF668 /* SmileMemoViewModel.swift */; };
 		48F192092AD29BAD009DF668 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F192082AD29BAD009DF668 /* Date+Extension.swift */; };
+		48F1920B2AD2A32B009DF668 /* SmileMemoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F1920A2AD2A32B009DF668 /* SmileMemoCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		482B050D2AD2AB7D00B7C77F /* Float+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Extension.swift"; sourceTree = "<group>"; };
 		48F191D72ACBEBB4009DF668 /* GoodSmile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodSmile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F191DA2ACBEBB4009DF668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48F191DC2ACBEBB4009DF668 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +47,7 @@
 		48F192042AD26CEF009DF668 /* RealmRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmRepository.swift; sourceTree = "<group>"; };
 		48F192062AD29B02009DF668 /* SmileMemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileMemoViewModel.swift; sourceTree = "<group>"; };
 		48F192082AD29BAD009DF668 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		48F1920A2AD2A32B009DF668 /* SmileMemoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileMemoCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 			children = (
 				48F191F42AD03C6F009DF668 /* UIApplication+Extension.swift */,
 				48F192082AD29BAD009DF668 /* Date+Extension.swift */,
+				482B050D2AD2AB7D00B7C77F /* Float+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				48F191FA2AD10FEF009DF668 /* SmileMemoView.swift */,
+				48F1920A2AD2A32B009DF668 /* SmileMemoCardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -237,12 +243,14 @@
 				48F192052AD26CEF009DF668 /* RealmRepository.swift in Sources */,
 				48F191FE2AD267E1009DF668 /* SmileMemo.swift in Sources */,
 				48F192072AD29B02009DF668 /* SmileMemoViewModel.swift in Sources */,
+				482B050E2AD2AB7D00B7C77F /* Float+Extension.swift in Sources */,
 				48F191DF2ACBEBB4009DF668 /* Experience.rcproject in Sources */,
 				48F191F22ACEEBF7009DF668 /* StopWatch.swift in Sources */,
 				48F191F02ACDAAC5009DF668 /* FaceRing.rcproject in Sources */,
 				48F192092AD29BAD009DF668 /* Date+Extension.swift in Sources */,
 				48F191EC2ACBF3DC009DF668 /* ARViewModel.swift in Sources */,
 				48F191EE2ACBF423009DF668 /* ARModel.swift in Sources */,
+				48F1920B2AD2A32B009DF668 /* SmileMemoCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

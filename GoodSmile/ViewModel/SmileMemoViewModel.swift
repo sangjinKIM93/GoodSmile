@@ -29,4 +29,8 @@ class SmileMemoViewModel: ObservableObject {
     func getSmileMemos() -> [SmileMemo] {
         return repository.getItem()
     }
+    
+    func getImage(name: String) -> UIImage? {
+        return ImageManager.shared.getSavedImage(named: name)
+    }
 }
